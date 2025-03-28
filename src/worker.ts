@@ -22,7 +22,7 @@ export default {
 					if (obj.hasOwnProperty('message')) {
 						if (obj.message.hasOwnProperty('text')) {
 							if (obj.message.chat.type == "private") {
-								let message = "The Bot works in this Group: https://t.me/%2BBSEojDWCtx1jOTFh"
+								let message = "The Bot works in this Group: https://t.me/+50jb_GU0ozNjN2I9"
 								await fetch("https://api.telegram.org/bot" + tg_bot_token + "/SendMessage?disable_web_page_preview=true&chat_id=" + obj.message.chat.id + "&reply_to_message_id=" + obj.message.message_id + "&text=" + message, {
 									method: "GET"
 								});
@@ -34,7 +34,7 @@ export default {
 								action = "upload_photo"
 							}
 							let model_name = "@cf/qwen/qwen1.5-14b-chat-awq"
-							if (obj.message.message_thread_id && obj.message.message_thread_id == 339) {
+							if (obj.message.message_thread_id && obj.message.message_thread_id == 4) {
 								model_name = "@cf/microsoft/phi-2"
 							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 765) {
 								model_name = "@hf/thebloke/deepseek-coder-6.7b-base-awq"
@@ -44,7 +44,7 @@ export default {
 								model_name = "@hf/google/gemma-7b-it"
 							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7924) {
 								model_name = "@cf/deepseek-ai/deepseek-math-7b-base"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7927) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 18) {
 								model_name = "@cf/deepseek-ai/deepseek-math-7b-instruct"
 							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7932) {
 								model_name = "@cf/thebloke/discolm-german-7b-v1-awq"
@@ -394,4 +394,4 @@ export default {
 			});
 		}
 	}
-}
+} 
