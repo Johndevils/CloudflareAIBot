@@ -1,6 +1,6 @@
 {
   "devDependencies": {
     "@cloudflare/ai": "^1.1.0",
-    "wrangler": "^3.48.0"
+    "wrangler": "^4.6.0"
   }
 }
