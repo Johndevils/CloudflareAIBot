@@ -30,61 +30,61 @@ export default {
 							const command = obj.message.text
 							const replied_to_message_text = obj.message.reply_to_message?.text || ""
 							let action = "typing"
-							if (obj.message.message_thread_id && obj.message.message_thread_id == 334) {
+							if (obj.message.message_thread_id && obj.message.message_thread_id == 1) {
 								action = "upload_photo"
 							}
 							let model_name = "@cf/qwen/qwen1.5-14b-chat-awq"
-							if (obj.message.message_thread_id && obj.message.message_thread_id == 4) {
+							if (obj.message.message_thread_id && obj.message.message_thread_id == 25) {
 								model_name = "@cf/microsoft/phi-2"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 765) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 26) {
 								model_name = "@hf/thebloke/deepseek-coder-6.7b-base-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 786) {
-								model_name = "@hf/thebloke/deepseek-coder-6.7b-instruct-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7845) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 27) {
+								model_name = "@hf/thebloke/deepseek-coder-6.7b-instruct-awq bh"
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 28) {
 								model_name = "@hf/google/gemma-7b-it"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7924) {
-								model_name = "@cf/deepseek-ai/deepseek-math-7b-base"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 18) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 29) {
+								model_name = "@cf/deepseek-ai/deepseek-math-7b-base bh"
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 30) {
 								model_name = "@cf/deepseek-ai/deepseek-math-7b-instruct"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7932) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 31) {
 								model_name = "@cf/thebloke/discolm-german-7b-v1-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7938) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 32) {
 								model_name = "@cf/tiiuae/falcon-7b-instruct"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7946) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 33) {
 								model_name = "@hf/nousresearch/hermes-2-pro-mistral-7b"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7953) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 34) {
 								model_name = "@hf/thebloke/llama-2-13b-chat-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7956) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 35) {
 								model_name = "@hf/thebloke/llamaguard-7b-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7959) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 36) {
 								model_name = "@hf/thebloke/mistral-7b-instruct-v0.1-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7962) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 37) {
 								model_name = "@hf/mistralai/mistral-7b-instruct-v0.2"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7965) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 38) {
 								model_name = "@hf/thebloke/neural-chat-7b-v3-1-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7968) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 39) {
 								model_name = "@cf/openchat/openchat-3.5-0106"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7971) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 40) {
 								model_name = "@hf/thebloke/openhermes-2.5-mistral-7b-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7974) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 41) {
 								model_name = "@cf/microsoft/phi-2"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7978) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 26) {
 								model_name = "@cf/qwen/qwen1.5-0.5b-chat"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7981) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 42) {
 								model_name = "@cf/qwen/qwen1.5-1.8b-chat"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7984) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 43) {
 								model_name = "@cf/qwen/qwen1.5-7b-chat-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7988) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 44) {
 								model_name = "@cf/qwen/qwen1.5-14b-chat-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7991) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 25) {
 								model_name = "@cf/defog/sqlcoder-7b-2"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7994) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 45) {
 								model_name = "@hf/nexusflow/starling-lm-7b-beta"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7997) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 52) {
 								model_name = "@cf/tinyllama/tinyllama-1.1b-chat-v1.0"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 8000) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 47 {
 								model_name = "@hf/thebloke/zephyr-7b-beta-awq"
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 7600) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 48) {
 								let model_number = 1
 								await handlePhotoEvent(obj.message.chat.id, obj.message.message_id, command, model_number)
 								return new Response("OK", {
@@ -93,7 +93,7 @@ export default {
 										"content-type": "application/json",
 									},
 								})
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 334) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 50) {
 								let model_number = 5
 								await handlePhotoEvent(obj.message.chat.id, obj.message.message_id, command, model_number)
 								return new Response("OK", {
@@ -102,7 +102,7 @@ export default {
 										"content-type": "application/json",
 									},
 								})
-							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 6830 && !obj.message.photo) {
+							} else if (obj.message.message_thread_id && obj.message.message_thread_id == 51 && !obj.message.photo) {
 								await fetch("https://api.telegram.org/bot" + tg_bot_token + "/SendMessage?disable_web_page_preview=true&chat_id=" + obj.message.chat.id + "&reply_to_message_id=" + obj.message.message_id + "&text=Please send a photo along with a caption.", {
 									method: "GET"
 								});
@@ -186,8 +186,8 @@ export default {
 								},
 							})
 						} else if (obj.message.message_thread_id) {
-							if (obj.message.message_thread_id == 6830) {
-								console.log("Message thread id is 6830")
+							if (obj.message.message_thread_id == 51) {
+								console.log("Message thread id is 51")
 								if (!obj.message.caption) {
 									await fetch("https://api.telegram.org/bot" + tg_bot_token + "/SendMessage?disable_web_page_preview=true&chat_id=" + obj.message.chat.id + "&reply_to_message_id=" + obj.message.message_id + "&text=Please send a caption while sending the photo about what to do with the photo.", {
 										method: "GET"
@@ -223,9 +223,9 @@ export default {
 					const chat_id = obj.callback_query.message.chat.id
 					const message_id = obj.callback_query.data
 					let model_number = 1
-					if (obj.callback_query.message.message_thread_id == 7600) {
+					if (obj.callback_query.message.message_thread_id == 49) {
 						model_number = 1
-					} else if (obj.callback_query.message.message_thread_id == 334) {
+					} else if (obj.callback_query.message.message_thread_id == 50) {
 						model_number = 5
 					}
 					await handlePhotoEvent(chat_id, message_id, data, model_number)
@@ -394,4 +394,4 @@ export default {
 			});
 		}
 	}
-} 
+											}
